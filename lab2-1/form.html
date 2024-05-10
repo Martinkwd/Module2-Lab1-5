@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+
+        </div>
+
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+
+        </div>
+        <div>
+            <input type="radio" id="html" name="languageNumber" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="languageNumber" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="javascript" name="languageNumber" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" id="car" name="vehicleType" value="CAR">
+            <label for="car">Car</label>
+            <input type="checkbox" id="bus" name="vehicleType" value="BUS">
+            <label for="bus">Bus</label>
+            <input type="checkbox" id="cab" name="vehicleType" value="CAB">
+            <label for="cab">Cab</label>
+        </div>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select id="cars" name="carBrands">
+                <option value="audi">Audi</option>
+                <option value="toyota">Toyota</option>
+                <option value="lamborghini">Lamborghini</option>
+            </select>
+            <button type="submit" value="submit">Submit form</button>
+        </div>
+
+    </form>
+
+    <header>
+        <nav>
+            <!-- works like <a href="/index.html">Home</a> -->
+            <a href="index.html">Home</a>
+            <a href="form.html">Form</a>
+        </nav>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

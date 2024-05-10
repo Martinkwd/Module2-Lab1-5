@@ -1,0 +1,90 @@
+
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        
+    }
+    
+    
+    .item1{
+        background-image: url('stars-1837306_640.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .item2{
+        background-image: url('photo-1444080748397-f442aa95c3e5.avif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .profile {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        overflow: hidden;
+        align-items: center;
+    }
+    
+    .profile img {
+        width: 100%;
+        height: auto;
+    }
+    
+    h2, h3, h4, header {
+        padding: 1rem;
+        color: white;
+        font-size: 17px;
+        font-stretch: normal;
+        font-family: Chalkduster;
+        font-weight: 5000
+    }
+    p{
+        padding: 1rem;
+        color: white;
+        font-stretch: normal;
+        font-weight: 5000
+    
+    }
+    
+    ul{
+        color: white;
+        font-stretch: normal;
+        font-weight: 5000
+    
+    }
+    a:link{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    
+    }
+    
+    a:hover{
+        color: royalblue;
+        text-decoration: none;
+    }
+    a:active{
+        color: black;
+        text-decoration: dotted;
+    
+    }
+    
+    a:focus{
+        color: white;
+    }
+    
+    a:visited{
+        color: brown;
+        font-style: italic;
+    }
+
+@media screen and (max-width:700px) {
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+}

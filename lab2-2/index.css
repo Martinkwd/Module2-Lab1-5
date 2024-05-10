@@ -1,0 +1,216 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+
+article {
+    /*using nothing more the element means that this is a "type selector"*/
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+.style-me1 {
+    /*using the dot "." means that this is a "class selector"*/
+    color: red;
+}
+
+#style-me2 {
+    /*using the dot "." means that this is a "type selector"*/
+    color: blue;
+}
+
+.style-me1#style-me2 {
+    /*using the dot "." then class and #id means that this is a "specific selector"*/
+    color: purple;
+
+
+}
+
+
+/* Put styles for questions 2.1 and 2.2 here */
+
+.my-descendants-are-styled {
+    background-color: red;
+}
+
+.my-children-are-styled {
+    background-color: lightgreen;
+}
+
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+
+.box {
+    background-color: aqua; /* 1.1*/
+
+    /* 1.2*/
+
+    /* 4 value syntax*/
+    margin: 10px 25px 20px 15px;
+    padding: 5px 20px 15px 10px;
+
+    /* 2 value syntax*/
+    /* margin: 10px 20px;
+    padding: 5px 10px; */
+
+    /* 1 value syntax*/
+    /* margin: 25;
+    padding: 15px; */
+
+    /* 1 value syntax*/
+    /* margin: 25;
+    padding: 15px; */
+
+    /* em unites syntax*/
+    /* margin: 1em;
+    padding: 5em; */
+    
+    /* % syntax*/
+    /* margin: 15%;
+    padding: 20%; */
+
+    /* 2.1*/
+
+    /* px */
+
+    /* width: 500px;
+    height: 200px; */
+
+    /* rem */
+    /* width: 15em; !important
+    height: 10em; !important */
+
+    /* vh stands for viewport height*/
+
+    width: 50vh !important;
+    height: 20vh !important;
+
+    /* vw stands for viewport width*/
+
+    /* width: 30vw;
+    height: 20vw; */
+
+
+
+
+    /* observations that the third box does not change is because the style attrubute is more important than the changes, it means if you want to make the changes in css you have to use the element !important to see the changes */
+    /* rezing the windows browser shows me that the paraphas change and combane with the other boxes making it unreadable  */
+
+}
+
+.box {
+    margin: 10px 25px 20px 15px;
+    padding: 10px 00px 150px 100px;
+    background-color: aqua; /* 1.1*/
+    border: 15px solid black ;
+    border: 5px solid violet;
+    border: 10px solid red;
+    box-sizing:border-box;
+    overflow: auto;
+    outline: 10px;
+    border-radius: 50%;
+    background-image: url("img1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+/* obeservation using border-box: the text in the box change the content and it does to fit in the box
+content-box fix that problem making the box with not problems */
+/* obeservation using overflow hidden makes the text hidde inside the box but you are not able to read it. 
+However, using auto or scroll gives you the option to see the text scrolling down in the box */
+
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-absolute{
+    position: absolute;
+    top: 0;
+    background-color: blue;
+    left: 0;
+
+    
+}
+.position-relative{
+    position: relative;
+    background-color: green;
+
+}
+
+/* absolute positining within relavies can freely moved around the relative based on the parent's position.
+Absolute positioning outside of the relative: this goes to the nearest positined ancestor  */
+/* added left/right postion value to .position-absolute: this move the text to different postions depending on the element  */
+
+.position-sticky{
+    position: sticky;
+    background-color: paleturquoise;
+    top: 0;
+
+}
+
+/* COMMENT FOR ME: THIS MAKE THAT THE TEXT NOT MOVE FROM THE POSITON, SO IF YOU SCROLL ON THE WEBPAGE
+YOU WILL STILL SEEING THE TEXT ON THE TOP */
+
+
+
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+.text-style{
+    color: royalblue;
+    font-size:x-large;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Jacquard 24 Charted", system-ui;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+a:link{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+    text-decoration: dotted;
+
+}
+
+a:focus{
+    color: blueviolet;
+    text-decoration: line-through;
+}
+
+a:visited{
+    color: brown;
+    font-style: italic;
+}
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+.calc-style{
+    width: 100vw;
+    background-color: blueviolet;
+    width: calc(100vw - 100px);
+}
+
+.fixed-width-col{
+    width: 350px;
+    display: inline-block;
+}
+.fluid-col{
+    display:inline-block;
+    width: calc(100vw - 350px);
+}
