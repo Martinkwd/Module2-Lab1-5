@@ -29,11 +29,16 @@ article {
 
 /* Put styles for questions 2.1 and 2.2 here */
 
-.my-descendants-are-styled {
+.my-descendants-are-styled { /* We want elements with the "my-descendants-are-styled"
+    class to style their descendant paragraph elements. To do that you'd add a 
+    p after the class name (seperated by a space).*/
     background-color: red;
 }
 
-.my-children-are-styled {
+.my-children-are-styled { /* This part is supposed to have a > p to select only the direct children
+    paragraph elements of the "my-children-are-styled" class. Because the > p is missing, all 
+    descendants of elements with this class will have this styling. To make only direct children 
+    paragraph elements have this styling, the CSS selector should be ".my-children-are-styled > p.*/
     background-color: lightgreen;
 }
 
@@ -55,11 +60,13 @@ article {
     padding: 5px 10px; */
 
     /* 1 value syntax*/
-    /* margin: 25;
+    /* margin: 25;      <-- Plain valid numbers are not valid values for the margin property.
+    You'd need to add some sort of length unit (px, rem, vw, etc)
     padding: 15px; */
 
     /* 1 value syntax*/
-    /* margin: 25;
+    /* margin: 25;      <-- Same as up above. Here is a link for length units for reference
+    https://www.w3schools.com/cssref/css_units.php
     padding: 15px; */
 
     /* em unites syntax*/
@@ -165,6 +172,12 @@ YOU WILL STILL SEEING THE TEXT ON THE TOP */
     line-height: 1.5;
     font-weight: 400;
     font-family: "Jacquard 24 Charted", system-ui;
+    /* The following properties should be added here to experiment with them:
+    text-align
+    letter-spacing
+    word-spacing
+    text-transform
+    text-decoration*/
 }
 
 /* V. Styling links */
@@ -213,4 +226,15 @@ a:visited{
 .fluid-col{
     display:inline-block;
     width: calc(100vw - 350px);
+    /* In this exercise, the text is supposed to sit in the same line as the image.
+    The body has a default margin added by the browser, so the article does not take up
+    the full width of the page. The article element then also has padding, so the children
+    within the article will not be able to take up the full width of the article. To get the
+    text to sit next to the image, you could use % instead of vw (to get the full width of the
+    article instead of the viewport), and then takeaway the padding x 2 as well as the
+    fixed-width-col class width. In this case, the article has a padding of 20px and the
+    fixed-width-col class has a width of 350px. To make the text fit the maximum available width,
+    you could use calc(100% - 350px - 20px * 2). The padding takes up room on both the left
+    and right side so that's why you need to multiply the padding by 2. If you want the calc
+    to take up less space, you could also do calc(100% - 390px)*/
 }
