@@ -100,6 +100,12 @@ a {
 
 }
 
+/* What you've done here is correct, and it gets the job done. Although you could change this to
+use less lines of code. Instead of giving all of the items their own flex-grow property, you could
+use the ".flex-menu li" selector to select all li tags inside of an element with the flex-menu class
+and give them a flex-grow property and then remove the individual classes for all of the items.
+If you were to do that, you'd still need styles for the fourth-item to set the order property.*/
+
 .first-item {
     flex-grow: 1;
     

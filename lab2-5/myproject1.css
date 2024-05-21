@@ -40,20 +40,22 @@
         font-size: 17px;
         font-stretch: normal;
         font-family: Chalkduster;
-        font-weight: 5000
+        font-weight: 5000 /* 5000 is an invalid property value for font-weight. The maximum value for
+        font-weight is 1000. Other valid values for font-weight can be found here:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight  */
     }
     p{
         padding: 1rem;
         color: white;
         font-stretch: normal;
-        font-weight: 5000
+        font-weight: 5000 /* Same as above */
     
     }
     
     ul{
         color: white;
         font-stretch: normal;
-        font-weight: 5000
+        font-weight: 5000 /* Same as above */
     
     }
     a:link{
